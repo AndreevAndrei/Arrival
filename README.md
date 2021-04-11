@@ -1,0 +1,2 @@
+# Arrival
+Model constructor example
