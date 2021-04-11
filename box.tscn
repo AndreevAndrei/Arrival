@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.792157, 0.866667, 0.529412, 1 )
+
+[node name="box" type="Spatial"]
+
+[node name="main_box" type="CSGBox" parent="."]
+material = SubResource( 1 )
+
+[node name="sub_cylinder" type="CSGCylinder" parent="main_box"]
+operation = 2
+radius = 0.25
+height = 2.5
+sides = 32
+material = SubResource( 1 )
+
+[node name="sub_sphere" type="CSGSphere" parent="main_box"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+operation = 2
+radial_segments = 24
+rings = 18
+material = SubResource( 1 )
