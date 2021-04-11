@@ -54,7 +54,10 @@ margin_right = -100.0
 margin_bottom = -100.0
 window_title = "Открыть файл"
 mode = 0
-filters = PoolStringArray( "" )
+filters = PoolStringArray( "*.tscn" )
+current_dir = "res://elements"
+current_file = "box.tscn"
+current_path = "res://elements/box.tscn"
 __meta__ = {
 "_edit_use_anchors_": false
 }
